@@ -1,0 +1,158 @@
+$white: #ffffff
+
+$font-suisse: SuisseIntl-Medium, sans-serif
+$font-suisse-b: SuisseIntl-Bold, sans-serif
+
+.wrapper
+  -webkit-tap-highlight-color: transparent
+  overscroll-behavior: none
+  width: 100% // prod
+  width: 50%
+  height: 100%
+  img
+    max-width: 100%
+    height: auto
+.reg
+  position: relative
+  height: calc(var(--vh, 1vh) * 100)
+  width: 100%
+  overflow: hidden
+  background: url("../img/bg-960.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1440px)
+    background: url("../img/bg-720.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1280px)
+    background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1260px)
+    background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 300px
+    width: 100%
+    background: linear-gradient(top, rgba(0, 0, 85, 0.00) 0%, #005 100%)
+  &__logo
+    width: 430px
+    height: 76px
+    margin: 40px auto 0
+    position: relative
+    z-index: 2
+  &__cup
+    position: absolute
+    bottom: -370px
+
+    transform: scale(2.1)
+    transform-origin: bottom
+  &__when
+    display: flex
+
+  &__date
+    color: #FFF
+    text-align: center
+    font-family: $font-suisse
+    font-size: 35px
+    letter-spacing: 1.75px
+    border-radius: 5.964px 0px 0px 5.964px
+    border-top: 1.193px solid #FFF
+    border-bottom: 1.193px solid #FFF
+    border-left: 1.193px solid #FFF
+    background: #FF267E
+    padding-inline: 14px
+  &__time
+    padding-inline: 14px
+    border-radius: 0px 5.964px 5.964px 0px
+    border-top: 1.193px solid #FFF
+    border-right: 1.193px solid #FFF
+    border-bottom: 1.193px solid #FFF
+    background: #005
+    color: #FFF
+    text-align: center
+    font-family: $font-suisse
+    font-size: 35px
+    letter-spacing: 1.75px
+  &__text
+    position: absolute
+    z-index: 2
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    margin-bottom: 320px
+    flex-direction: column
+  &__teams
+    margin-top: 18px
+    margin-bottom: 55px
+    width: 500px
+  &__welcome
+    display: block
+    text-align: center
+    margin-top: 0
+    margin-bottom: 4px
+    color: #005
+    font-family: $font-suisse-b
+    font-size: 52.997px
+    line-height: 106%
+    text-transform: uppercase
+  &__up
+    color: #FFF
+    font-family: $font-suisse
+    line-height: 106%
+    letter-spacing: 2.1px
+    background: #FF267E
+    font-size: 70px
+    height: 85px
+    padding-right: 10px
+    padding-top: 7px
+    &--small
+      font-size: 35px
+      padding-left: 23px
+      padding-right: 6px
+      text-transform: uppercase
+
+  &__fs
+    background: #005
+    color: #FFF
+    text-align: center
+    font-family: $font-suisse
+    font-size: 70px
+    line-height: 106%
+    letter-spacing: 0.7px
+    height: 85px
+    padding-top: 7px
+    position: relative
+    &::before
+      content: ''
+      display: block
+      width: 47.763px
+      height: 41.84px 
+      position: absolute
+      left: 0
+      top: 0
+      background: url("../img/plus.png") no-repeat 50% 50%/cover
+      transform: translate(-50%, -50%)
+  &__footer
+    position: absolute
+    bottom: 25px
+    left: 0
+    right: 0
+    color: $white
+    text-align: center
+    font-family: $font-suisse
+    font-size: 18px
+    line-height: 110% 
+    letter-spacing: 0.64px
+    margin: 0 auto
+    z-index: 3
+    opacity: 0.6
+    max-width: 780px
+
+
+
+@media screen and (max-width: 1023px)
+  .wrapper
+    display: none
+  .Layout_column__3MM83
+    width: 100%

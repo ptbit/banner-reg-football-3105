@@ -1,0 +1,37 @@
+.wrapper
+  .reg
+    .reg__logo
+      img(src="./img/logo.svg" alt="favbet logo")
+
+    .reg__cup
+      picture
+        source(media="(max-width: 1032px) and (min-height: 1032px) and (orientation: portrait)" srcset="img/cup.png")
+        source(media="(max-width: 1024px)" srcset="img/cup-512.png")
+        source(media="(max-width: 1280px)" srcset="img/cup-640.png")
+        source(media="(max-width: 1440px)" srcset="img/cup-720.png")
+        source(media="(min-width: 1441px)" srcset="img/cup-960.png")
+        img(src="img/cup-640.png" alt="favbet cup")
+    .reg__text
+      .reg__when
+        .reg__date 31.05
+        .reg__time 22:00
+      .reg__teams
+        picture
+          source(media="(max-width: 1032px) and (min-height: 1032px) and (orientation: portrait)" srcset="img/text-512-en.png")
+          source(media="(max-width: 1024px)" srcset="img/text-512-en.png")
+          source(media="(max-width: 1280px)" srcset="img/text-640-en.png")
+          source(media="(max-width: 1440px)" srcset="img/text-720-en.png")
+          source(media="(min-width: 1441px)" srcset="img/text-960-en.png")
+          img(src="img/text-640-en.png" alt="favbet text")
+      .reg__bonus
+        p.reg__welcome Welcome Bonus*
+        .reg__up
+          span.reg__up--small up to 
+          span 225 000 ₴
+        .reg__fs 300 FS
+        
+
+    .reg__footer *Bonus means the opportunity to receive a prize as part of the «Welcome bonus» 
+      | Promotion. Details on the website favbet.ua. 
+      | Promotion dates are from 24.03.2025 to 31.12.2025. 
+      | The bonus is available for new customers only.
