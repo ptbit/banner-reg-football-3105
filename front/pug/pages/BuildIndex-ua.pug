@@ -12,13 +12,25 @@
         source(media="(min-width: 1441px)" srcset="img/cup-960.png")
         img(src="img/cup-640.png" alt="favbet cup")
     .reg__text
-      picture
-        source(media="(max-width: 1032px) and (min-height: 1032px) and (orientation: portrait)" srcset="img/text-512-ua.png")
-        source(media="(max-width: 1024px)" srcset="img/text-512-ua.png")
-        source(media="(max-width: 1280px)" srcset="img/text-640-ua.png")
-        source(media="(max-width: 1440px)" srcset="img/text-720-ua.png")
-        source(media="(min-width: 1441px)" srcset="img/text-960-ua.png")
-        img(src="img/text-640.png" alt="favbet text")
-    .reg__footer *Під призовим фондом у 2 000 000 ₴ мається на увазі отримання призу у вигляді електронних грошових замінників в 
-      | Акції «Легендарний трофей». Деталі на сайті www.favbet.ua. 
-      | Загальний період дії акції – з 03.03.2025 до 31.05.2025 року
+      .reg__when
+        .reg__date 31.05
+        .reg__time 22:00
+      .reg__teams.reg__teams--ua
+        picture
+          source(media="(max-width: 1032px) and (min-height: 1032px) and (orientation: portrait)" srcset="img/text-512-ua.png")
+          source(media="(max-width: 1024px)" srcset="img/text-512-ua.png")
+          source(media="(max-width: 1280px)" srcset="img/text-640-ua.png")
+          source(media="(max-width: 1440px)" srcset="img/text-720-ua.png")
+          source(media="(min-width: 1441px)" srcset="img/text-960-ua.png")
+          img(src="img/text-640-en.png" alt="favbet text")
+      .reg__bonus
+        p.reg__welcome вітальний бонус*
+        .reg__up
+          span.reg__up--small до
+          span 225 000 ₴
+        .reg__fs 300 FS
+        
+
+    .reg__footer *Під бонусом розуміється можливість отримати приз в рамках акції 
+      | «Вітальний бонус». Період дії акції з 24.03.2025 по 31.12.2025 року. 
+      | Бонус доступний тільки для нових клієнтів. Деталі на сайті favbet.ua.

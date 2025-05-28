@@ -3,6 +3,28 @@ $white: #ffffff
 $font-suisse: SuisseIntl-Medium, sans-serif
 $font-suisse-b: SuisseIntl-Bold, sans-serif
 
+.buttons
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 3
+  padding-top: 7px
+  a
+    padding: 5px 10px
+    border: 1px dashed grey
+    color: grey
+    text-align: center
+    font-family: $font-suisse
+    font-size: 25px
+    text-decoration: none
+    cursor: pointer
+    transition: all .3s linear
+    background-color: transparent
+    &:hover
+      background-color: grey
+      color: white
+
+
 .wrapper
   -webkit-tap-highlight-color: transparent
   overscroll-behavior: none
@@ -86,6 +108,8 @@ $font-suisse-b: SuisseIntl-Bold, sans-serif
     margin-top: 18px
     margin-bottom: 55px
     width: 500px
+    &--ua
+      width: 540px
   &__welcome
     display: block
     text-align: center
@@ -106,6 +130,7 @@ $font-suisse-b: SuisseIntl-Bold, sans-serif
     height: 85px
     padding-right: 10px
     padding-top: 7px
+    text-align: center
     &--small
       font-size: 35px
       padding-left: 23px
